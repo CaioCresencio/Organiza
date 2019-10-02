@@ -1,9 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt-BR"  xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
     <title>Organiza</title>
 
 </head>
     <h1>Hello World</h1>
+    <div th:each="card : ${list_cards}">
+        <span th:text="${card.title}">title</span>
+        <span th:text="${card.description}">description</span>
+    </div>
 </html>
